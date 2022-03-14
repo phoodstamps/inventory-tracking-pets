@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  backendapi:
+    image: backendapi
+    build:
+      context: back-end-api
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: development
+    ports:
+      - 7878:7878
+      - 9229:9229
+    command: ["node", "--inspect=0.0.0.0:9229", "app.js"]

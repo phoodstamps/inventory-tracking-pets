@@ -8,33 +8,33 @@ var mongoose = require('mongoose');
 const MongoStore = require('connect-mongo');
 require('dotenv').config();
 
-// mongoose.connect(process.env.MONGOCONN, {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//     useFindAndModify: false
-// });
+mongoose.connect(process.env.MONGOCONN, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    //useFindAndModify: false
+});
 
-//var db = mongoose.connection;
-//db.on("error", console.error.bind(console, "CONNECTION ERROR"));
-// db.once("open", async() => {
-//     //we're connected
-    
-// })
+var db = mongoose.connection;
+db.on("error", console.error.bind(console, "CONNECTION ERROR"));
+db.once("open", async() => {
+    //we're connected
+    lib.inventoryTrackingLogStream.write(' Connected to DB\n');
+})
 
 var app = express();
 
 app.use(cors());
 
-// app.use(
-//     session({
-//         name:"inventoryTracking.sid",
-//         store: MongoStore.create({ mongoUrl: process.env.MONGOCONN}),
-//         secret: process.env.SECRET_KEY,
-//         cookie: { maxAge: (1000 * 60 * 60) * 12},
-//         saveUninitialized: false,
-//         resave: false
-//     })
-// );
+app.use(
+    session({
+        name:"inventoryTracking.sid",
+        store: MongoStore.create({ mongoUrl: process.env.MONGOCONN}),
+        secret: process.env.SECRET_KEY,
+        cookie: { maxAge: (1000 * 60 * 60) * 12},
+        saveUninitialized: false,
+        resave: false
+    })
+);
 
 //app.use(flash());
 
