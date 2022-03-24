@@ -1,3 +1,27 @@
  Connected to DB
 ::ffff:172.18.0.1 - - [22/Mar/2022:00:31:00 +0000] "GET /test HTTP/1.1" 200 24 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
 ::ffff:172.18.0.1 - - [22/Mar/2022:00:31:00 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:7878/test" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
+ Connected to DB
+ Connected to DB
+::ffff:172.18.0.1 - - [24/Mar/2022:02:03:13 +0000] "GET /test HTTP/1.1" 500 148 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
+::ffff:172.18.0.1 - - [24/Mar/2022:02:03:33 +0000] "GET /api HTTP/1.1" 500 148 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
+::ffff:172.18.0.1 - - [24/Mar/2022:02:03:38 +0000] "GET /api/ HTTP/1.1" 500 148 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
+ Connected to DB
+::ffff:172.18.0.1 - - [24/Mar/2022:02:08:06 +0000] "GET /test HTTP/1.1" 200 24 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
+::ffff:172.18.0.1 - - [24/Mar/2022:02:08:06 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:7878/test" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
+::ffff:172.18.0.1 - - [24/Mar/2022:02:08:13 +0000] "GET /api HTTP/1.1" 200 2 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
+::ffff:172.18.0.1 - - [24/Mar/2022:02:08:24 +0000] "GET /api/ HTTP/1.1" 200 2 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
+::ffff:172.18.0.1 - - [24/Mar/2022:02:08:52 +0000] "GET /api/create-shipment HTTP/1.1" 404 158 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
+::ffff:172.18.0.1 - - [24/Mar/2022:02:09:34 +0000] "GET /test HTTP/1.1" 200 24 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
+::ffff:172.18.0.1 - - [24/Mar/2022:02:11:19 +0000] "POST /api/create-student HTTP/1.1" 404 158 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
+::ffff:172.18.0.1 - - [24/Mar/2022:02:11:30 +0000] "POST /api/create-shipment HTTP/1.1" 200 42 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
+::ffff:172.18.0.1 - - [24/Mar/2022:02:11:40 +0000] "POST / HTTP/1.1" 404 140 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
+::ffff:172.18.0.1 - - [24/Mar/2022:02:11:44 +0000] "POST /api HTTP/1.1" 404 143 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
+::ffff:172.18.0.1 - - [24/Mar/2022:02:11:47 +0000] "GET /api HTTP/1.1" 200 44 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
+::ffff:172.18.0.1 - - [24/Mar/2022:02:18:04 +0000] "POST /api/create-student HTTP/1.1" 404 158 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
+::ffff:172.18.0.1 - - [24/Mar/2022:02:18:11 +0000] "POST /api/create-shipment HTTP/1.1" 200 42 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
+::ffff:172.18.0.1 - - [24/Mar/2022:02:18:58 +0000] "POST /api/create-shipment HTTP/1.1" 200 42 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
+::ffff:172.18.0.1 - - [24/Mar/2022:02:19:00 +0000] "POST /api/create-shipment HTTP/1.1" 200 42 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
+::ffff:172.18.0.1 - - [24/Mar/2022:02:19:00 +0000] "POST /api/create-shipment HTTP/1.1" 200 42 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
+::ffff:172.18.0.1 - - [24/Mar/2022:02:19:01 +0000] "POST /api/create-shipment HTTP/1.1" 200 42 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
+::ffff:172.18.0.1 - - [24/Mar/2022:02:19:02 +0000] "POST /api/create-shipment HTTP/1.1" 200 42 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"

@@ -6,6 +6,7 @@ const session = require('express-session');
 const morgan = require('morgan');
 var mongoose = require('mongoose');
 const MongoStore = require('connect-mongo');
+const bodyParser = require('body-parser');
 require('dotenv').config();
 
 mongoose.connect(process.env.MONGOCONN, {
@@ -21,7 +22,12 @@ db.once("open", async() => {
     lib.inventoryTrackingLogStream.write(' Connected to DB\n');
 })
 
+var shipmentAPI = require('./routes/shipment.route');
 var app = express();
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+    extended: false,
+}))
 
 app.use(cors());
 
@@ -50,6 +56,6 @@ app.get('/test', (req, res) => {
     res.status(200).json({ message: 'Connected!'});
 })
 
-//app.use('/', routes);
+app.use('/api', shipmentAPI);
 
 module.exports = app;
