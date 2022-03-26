@@ -25,3 +25,8 @@
 ::ffff:172.18.0.1 - - [24/Mar/2022:02:19:00 +0000] "POST /api/create-shipment HTTP/1.1" 200 42 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
 ::ffff:172.18.0.1 - - [24/Mar/2022:02:19:01 +0000] "POST /api/create-shipment HTTP/1.1" 200 42 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
 ::ffff:172.18.0.1 - - [24/Mar/2022:02:19:02 +0000] "POST /api/create-shipment HTTP/1.1" 200 42 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
+ Connected to DB
+ Connected to DB
+ Connected to DB
+ Connected to DB
+ Connected to DB
