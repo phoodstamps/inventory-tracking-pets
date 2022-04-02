@@ -1,13 +1,13 @@
 {
-  "name": "back-end-api",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "bin": {
-    "back-end-api": "bin/www.js"
+    "backend": "bin/www.js"
   },
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "nodemon --inspect=0.0.0.0:9229 ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -26,5 +26,8 @@
     "mongoose": "^6.2.5",
     "morgan": "^1.10.0",
     "rotating-file-stream": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
