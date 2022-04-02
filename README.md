@@ -12,6 +12,28 @@ Run node server with nodemon enabled and debugger:
     docker-compose up
 ```
 
+### Inventory Api Endpoints
+```
+GET all shipments - http://localhost:7878/api/
+
+POST new shipment - http://localhost:7878/api/create-shipment/
+  body of request:
+    - vendor: "vendor name"
+    - invoice: "invoice number"
+    - shipDate: "shipment date"
+
+UPDATE shipment - http://localhost:7878/api/update-shipment/id:
+  url will contain shipment id of shipment record to be deleted
+  body of request will contain fields being updated:
+    - vendor: "vendor name"
+    - invoice: "invoice number"
+    - shipDate: "shipment date"
+
+DELETE shipment - http://localhost:7878/api/delete-shipment/id:
+  url will contain shipment id of shipment record to be deleted
+
+```
+
 
 ## Frontend setup - Vue
 ```
