@@ -4,7 +4,7 @@ services:
   backendapi:
     image: backendapi
     build:
-      context: back-end-api
+      context: backend
       dockerfile: ./Dockerfile
     environment:
       NODE_ENV: development

@@ -8,7 +8,7 @@
       "restart": true,
       "port": 9229,
       "address": "localhost",
-      "localRoot": "${workspaceFolder}",
+      "localRoot": "${workspaceFolder}/backend",
       "remoteRoot": "/usr/src/app",
       "protocol": "inspector"
     }
