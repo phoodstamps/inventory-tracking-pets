@@ -22,7 +22,7 @@ db.once("open", async() => {
     lib.inventoryTrackingLogStream.write(' Connected to DB\n');
 })
 
-var shipmentAPI = require('./routes/shipment.route');
+var routeAPI = require('./routes');
 var app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -56,6 +56,6 @@ app.get('/test', (req, res) => {
     res.status(200).json({ message: 'Connected!'});
 })
 
-app.use('/api', shipmentAPI);
+app.use('/api', routeAPI);
 
 module.exports = app;
